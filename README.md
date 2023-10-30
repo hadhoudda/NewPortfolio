@@ -8,7 +8,7 @@
 
 ## Installation sass
 
-### `npm i sass --save-devs`
+### `npm i sass --save`
 
 ## Configuration Eslint
 
