@@ -1,7 +1,14 @@
 @import "mixins-variables";
 
 header {
-    height: 50px;
+    height: 100px;
     background-color: $header-color;
+    .logo{
+        height: 50px;
+        width: 50px;
+        margin: 30px;
+    }
+
+
     
 }
