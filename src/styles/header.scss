@@ -1,14 +1,45 @@
 @import "mixins-variables";
 
 header {
-    height: 100px;
+    height: 80px;
     background-color: $header-color;
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
     .logo{
-        height: 50px;
-        width: 50px;
-        margin: 30px;
+        border-radius: 50px;
+        height: 60px;
+        width: 60px;
+        margin-left: 20px;
+        margin-top: 0px;
+        box-shadow: 0 0 20px rgb(74, 77, 77);
+        &:hover{
+            box-shadow: 0 0 5px rgb(125, 128, 128),
+            0 0 35px rgb(125, 128, 128), 0 0 60px rgb(125, 128, 128);
+        }
+    }    
+}
+
+// /* RESPONSIVE 992px */
+// @media screen and (max-width: 992px) {
+//     header{
+//         .logo{
+//             margin-left: 20px;
+//         }
+//     }
+// }
+
+/* RESPONSIVE 686px */
+@media screen and (max-width: 700px) {
+    header{
+        background-color: none;
+        padding-top: 10px;
+        .logo{
+            
+            margin-left: 10px;
+        }
     }
-
-
-    
 }

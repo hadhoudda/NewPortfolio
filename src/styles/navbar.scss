@@ -1,0 +1,101 @@
+nav{
+    font-size: 22px;
+    height: 50px;
+    .liste,
+    .liste-responsive  {
+        list-style-type: none;
+        height: 100%;
+        display: flex;
+        gap: 45px;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 50px;
+        position: relative;
+        .items {
+            color: white;
+            margin-right: 10px;
+            cursor: pointer;
+            &:hover{
+                scale: 1.35;
+            } 
+        }
+    }
+    .btn {
+        color: white;
+        font-size: 150%;
+        display: none;
+    }
+}
+
+
+
+
+/* RESPONSIVE CSS */
+@media screen and (max-width: 920px) {
+    nav{
+        .liste{
+            gap: 12px;
+            padding-right: 15px;
+            font-size: 14px;
+        }
+    }
+    
+}
+
+
+/* RESPONSIVE CSS */
+@media screen and (max-width: 680px) {
+    nav {
+        width: 100%;
+        margin : -20px 0 0 -50px;
+
+        .liste{
+            display: none;
+        }
+
+        .liste-responsive {
+            background-color: rgba(10, 18, 21, 0.9);
+            flex-direction: column;
+            justify-content: center;
+            justify-content: start;
+            gap: 1px;
+            padding: 70px 0 0 0;
+            height: 93vh;
+            a{
+                font-size: 22px;
+                font-weight: 200;
+            }
+            .items a:hover{
+                scale: 1.05;
+            }
+            .link-items{
+                width: 80%;
+                padding-bottom: 15px;
+            }
+            .items {
+                font: inherit;
+                font-size: 22px;
+                font-weight: 500;
+                text-align: center;
+                padding-bottom: 5px;
+                height: 40px;
+                line-height: 50px;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+
+            }    
+        }
+
+        .btn {
+            display: block;
+            position: absolute;
+            padding-top: 5px;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        } 
+    }
+    
+   
+
+    
+}
