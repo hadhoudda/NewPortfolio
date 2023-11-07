@@ -7,7 +7,7 @@ import "../styles/header.scss";
 function Header() {
     return (
         <header>
-            <Link to='/'><img className ="logo" src={logo} alt='image__houda' /></Link>
+            <Link to='/Portfolio'><img className ="logo" src={logo} alt='image__houda' /></Link>
             <Navbar/>
         </header>
     )

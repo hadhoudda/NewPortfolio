@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/navbar.scss'
 
 function Navbar() {
-    const [toggleMenu, setToggleMenu ] = useState (false);
+    const [toggleMenu, setToggleMenu ] = useState (true);
 
     const toggleNavSmallScreen =() => {
         setToggleMenu (!toggleMenu);
