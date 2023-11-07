@@ -1,22 +1,25 @@
+@import "mixins-variables";
+
 nav{
     font-size: 22px;
     height: 50px;
+    a{
+        color: $links-navbar-color;
+    }
     .liste,
     .liste-responsive  {
-        list-style-type: none;
         height: 100%;
         display: flex;
-        gap: 45px;
         justify-content: flex-end;
         align-items: center;
+        gap: 45px;
         padding-right: 50px;
-        position: relative;
+        // position: relative;
         .items {
-            color: white;
             margin-right: 10px;
             cursor: pointer;
             &:hover{
-                scale: 1.35;
+                scale: 1.25;
             } 
         }
     }
@@ -27,14 +30,11 @@ nav{
     }
 }
 
-
-
-
 /* RESPONSIVE CSS */
 @media screen and (max-width: 920px) {
     nav{
         .liste{
-            gap: 12px;
+            gap: 15px;
             padding-right: 15px;
             font-size: 14px;
         }
@@ -47,8 +47,8 @@ nav{
 @media screen and (max-width: 680px) {
     nav {
         width: 100%;
+        padding: 0;
         margin : -20px 0 0 -50px;
-
         .liste{
             display: none;
         }
@@ -58,9 +58,11 @@ nav{
             flex-direction: column;
             justify-content: center;
             justify-content: start;
-            gap: 1px;
+            gap: 20px;
+            margin-top: 20px;
             padding: 70px 0 0 0;
-            height: 93vh;
+            height: 70vh;
+            width: 100vw;
             a{
                 font-size: 22px;
                 font-weight: 200;
@@ -68,11 +70,9 @@ nav{
             .items a:hover{
                 scale: 1.05;
             }
-            .link-items{
+            .items {
                 width: 80%;
                 padding-bottom: 15px;
-            }
-            .items {
                 font: inherit;
                 font-size: 22px;
                 font-weight: 500;
