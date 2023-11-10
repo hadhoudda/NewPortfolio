@@ -1,0 +1,139 @@
+@import "mixins-variables";
+
+.section-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    gap: 20px;
+    .title{ 
+        color:black;
+        font-size: 56px;
+        font-weight: 700;
+        margin: 20px;
+        animation: slideRight 1s ease forwards;
+    }
+    
+    .txt-home{
+        color: black;
+        font-size: 32px ;
+    }
+
+    .container-icone{
+        display: flex;
+        gap: 200px;
+        span{
+            font-weight: 700;
+        }
+        i{
+            font-size:500% ;
+            color: rgb(87, 72, 72);
+            margin-bottom: 20px;
+            animation: rotate 10s linear infinite; 
+        }
+    }
+    .link-social{
+        a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid rgb(80, 80, 27);
+            border-radius: 50%;
+            font-size: 30px;
+            color:rgb(71, 71, 21);
+            margin: 30px 15px 30px 0;
+        }
+        
+        i {
+            color:rgb(78, 78, 22);
+            &:hover{
+                color: white
+            }
+        }
+        a:hover{
+            background:rgb(64, 64, 18);
+            box-shadow: 0 0 20px rgb(72, 72, 16);
+        }
+    } 
+    .btn-cv{
+        display: inline-block;
+        margin-top: 10px;
+        padding: 12px 28px ;
+        background: rgb(84, 80, 85);
+        border-radius: 40px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        &:hover{
+            box-shadow: 0 0 20px rgb(44, 20, 55);
+        }
+    }
+}
+
+/* KEYFRAMES ANIMATION */
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate{
+    to{ transform: rotate(360deg); }
+  }
+
+
+/* RESPONSIVE CSS */
+
+@media screen and (max-width: 920px) {
+    .section-home{
+        h1{
+            margin: 30px;
+            font-size: 36px;
+        }
+        .txt-home{
+            font-size: 20px ;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .section-home{
+        gap: 18px;
+        .title{
+            font-size: 32px;
+            font-weight: 700;
+            margin:0 10px;
+            padding-top: 10px;
+        }
+        
+        .txt-home{
+            font-size: 20px;
+            font-weight: 500;
+            margin: 10px;
+        } 
+    
+        .container-icone{
+            display: flex;
+            gap: 50px;
+            i{
+                font-size:300% ;
+                margin-bottom: 20px;
+            }
+        }
+        
+        .btn-cv{
+            padding: 10px 10px ;
+            font-size: 12px;
+        }
+    }    
+}
