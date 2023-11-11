@@ -1,7 +1,6 @@
 import {  Routes, Route, BrowserRouter } from "react-router-dom";
 import React from "react";
 import Portfolio from './pages/Portfolio';
-import Apropos from "./components/Apropos";
 import NotFound from "./pages/NotFound";
 
 function App() {

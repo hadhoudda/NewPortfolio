@@ -1,0 +1,47 @@
+.container-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+.title-portfolio{
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+.content-portfolio{
+    width: 85%;
+	display: grid;
+    align-self: center;
+    grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 40px;
+	grid-row-gap: 50px;
+    padding-bottom: 30px;
+}
+
+.card-project-p:hover{
+    display: none;
+}
+
+
+/* RESPONSIVE CSS */
+@media screen and (max-width: 1200px) {
+    .content-portfolio{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+    .title-card,
+    .title-description{
+        font-size: 24px;
+        font-weight: 500;
+        padding-left: 15px;
+        scale: 1.01s;
+    }
+}
+
+/* RESPONSIVE CSS */
+@media screen and (max-width: 780px) {
+    .content-portfolio{
+        grid-template-columns: repeat(1, 1fr);
+    }
+   
+}

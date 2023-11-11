@@ -4,7 +4,7 @@ import profil from "../assets/profil.webp"
 
 function Apropos() {
     return (
-        <section className="container-profil profil" title="profil">
+        <section className="container-profil profil" >
                 <h2 className="title-profil">À propos de moi</h2>
                 <div className="contenu-profil">
                     <img className ="photo-profil" src={profil} alt='profil__houda' />
