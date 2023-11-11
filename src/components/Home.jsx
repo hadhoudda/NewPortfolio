@@ -4,7 +4,7 @@ import '../styles/home.scss';
 
 function Home() {
   return (
-    <section className='section-home'>
+    <section className='section-home' id='home'>
         <h1 className='title'>Bienvenue sur mon <br/> portfolio</h1>
         <p className="txt-home">
             Je suis Houda,

@@ -9,7 +9,6 @@ function App() {
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<Portfolio />} />
-            <Route path="/profil" element={<Apropos/>}/>
             <Route path="/*" element={<NotFound />} /> 
         </Routes>
     </BrowserRouter>
