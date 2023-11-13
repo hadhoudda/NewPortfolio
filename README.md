@@ -14,3 +14,11 @@
 
 ### `npm install eslint --save -dev`
 ### `npx eslint --init`
+
+## Configuration scroll 
+
+### `npm install react-scroll`
+
+## Configuration mail 
+
+### `npm install @emailjs/browser --save`
