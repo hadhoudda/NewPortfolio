@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Home from "../components/Home";
 import Apropos from "../components/Apropos";
 import Competence from "../components/Competence";
-import Project from "../components/Project";
+import Projects from "../components/Projects";
 
 function Portfolio() {
   return (
@@ -12,7 +12,7 @@ function Portfolio() {
         <Home/>
         <Apropos/>
         <Competence/>
-        <Project/>
+        <Projects/>
     </>
   );
 }
